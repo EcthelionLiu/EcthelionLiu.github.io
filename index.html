@@ -2,37 +2,72 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Jiaxi Liu</title>
-
     <meta name="author" content="Jiaxi Liu | 刘家熙">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/shuttlecock.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
+    <style>
+      html {
+        scroll-behavior: smooth; /* 点击导航栏时的平滑滚动效果 */
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.98);
+        z-index: 1000;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px 0;
+        text-align: center;
+        font-family: sans-serif;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 轻微的阴影让导航栏更立体 */
+      }
+      .navbar a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #777;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.2s ease-in-out;
+      }
+      .navbar a:hover {
+        color: #222;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="navbar">
+      <a href="#about">About Me</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Honors and Awards</a>
+      <a href="#education">Education</a>
+      <a href="#misc">Miscellaneous</a>
+    </div>
+
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Jiaxi Liu | 刘家熙
-                <p>
-              I am Jiaxi Liu, a first-year Master's student in the Department of Computer Science at Shanghai Jiao Tong University. Since 2024, I have been a member of ReThinkLab, advised by Prof. <a href="https://thinklab.sjtu.edu.cn/">Junchi Yan(严骏驰)</a>. 
                 </p>
                 <p>
-              I received my Bachelor of Engineering from the Department of Artificial Intelligence at Nanjing University in 2025. During my undergraduate studies, I had the privilege of working with Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK">Yang Yu</a> in the <a href="https://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA</a> Group. I was also fortunate to serve as a visiting researcher at <a href="https://statistics.yale.edu/">Yale University</a>, collaborating with Prof. <a href="https://zhuoranyang.github.io/">Zhuoran Yang</a>. Additionally, I previously worked as an algorithm engineering intern at <a href="https://topd.tencent.com/career/company/tencent/WXG">Tencent</a>, Guangzhou.
+                  I am Jiaxi Liu, a first-year Master's student in the Department of Computer Science at Shanghai Jiao Tong University. Since 2024, I have been a member of ReThinkLab, advised by Prof. <a href="https://thinklab.sjtu.edu.cn/">Junchi Yan(严骏驰)</a>. 
                 </p>
                 <p>
-              My research interests lie in Large Language Models (LLMs), self-evolving systems, generative models, and machine learning on graphs. My research goal is to build highly autonomous AI agents by synergizing generative modeling with principled decision-making frameworks, ultimately pushing the boundaries of self-evolving artificial intelligence.
-              </p>
+                  I received my Bachelor of Engineering from the Department of Artificial Intelligence at Nanjing University in 2025. During my undergraduate studies, I had the privilege of working with Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK">Yang Yu</a> in the <a href="https://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA</a> Group. I was also fortunate to serve as a visiting researcher at <a href="https://statistics.yale.edu/">Yale University</a>, collaborating with Prof. <a href="https://zhuoranyang.github.io/">Zhuoran Yang</a>. Additionally, I previously worked as an algorithm engineering intern at <a href="https://topd.tencent.com/career/company/tencent/WXG">Tencent</a>, Guangzhou.
+                </p>
+                <p>
+                  My research interests lie in Large Language Models (LLMs), self-evolving systems, generative models, and machine learning on graphs. My research goal is to build highly autonomous AI agents by synergizing generative modeling with principled decision-making frameworks, ultimately pushing the boundaries of self-evolving artificial intelligence.
+                </p>
                 <p style="text-align:center">
-                  <a href="mailto:ecthelionliu2003@gmail.com">Email</a>  / 
-                  <a href="https://scholar.google.com/citations?user=dBu6_6sAAAAJ&hl=en">Google Scholar</a>  / 
+                  <a href="mailto:ecthelionliu2003@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=dBu6_6sAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/EcthelionLiu">Github</a>
                 </p>
               </td>
@@ -41,137 +76,154 @@
               </td>
             </tr>
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications (* indicates equal contribution)</h2>
-                
+                <h2 id="publications">Publications (* indicates equal contribution)</h2>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<tr>
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-        <a href="images/HetSGFormer.png"><img src='images/HetSGFormer.png' width="100%"></a>
-    </div>
-  </td>
-  <td style="padding: 20px; width:75%; vertical-align:middle">
-    <a class="a1" href="https://arxiv.org/abs/2512.13120">
-      <span class="papertitle">Towards Practical Large-scale Dynamical Heterogeneous Graph Embedding: Cold-start Resilient Recommendation</span>
-    </a>
-    <br>
-    <a class="a2">Mabiao Long*</a>,
-    <strong>Jiaxi Liu*</strong>,
-    <a class="a2">Yufeng Li, Hao Xiong, Junchi Yan, Kefan Wang, Yi Cao, Jiandong Ding</a> 
-    <br>
-    Preprint
-    <br>
-    <a href="https://arxiv.org/abs/2512.13120">PDF</a>
-    <p></p>
-    <p>
-      We introduce a practical, two-stage framework combining HetSGFormer for scalable static learning and Incremental Locally Linear Embedding (ILLE) for real-time, GPU-free updates, addressing scalability, data freshness, and cold-start challenges in billion-scale recommendation systems.
-    </p>
-  </td>
-</tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                    <a href="images/HetSGFormer.png"><img src='images/HetSGFormer.png' width="100%"></a>
+                </div>
+              </td>
+              <td style="padding: 20px; width:75%; vertical-align:middle">
+                <a class="a1" href="https://arxiv.org/abs/2512.13120">
+                  <span class="papertitle">Towards Practical Large-scale Dynamical Heterogeneous Graph Embedding: Cold-start Resilient Recommendation</span>
+                </a>
+                <br>
+                <a class="a2">Mabiao Long*</a>,
+                <strong>Jiaxi Liu*</strong>,
+                <a class="a2">Yufeng Li, Hao Xiong, Junchi Yan, Kefan Wang, Yi Cao, Jiandong Ding</a> 
+                <br>
+                Preprint
+                <br>
+                <a href="https://arxiv.org/abs/2512.13120">PDF</a>
+                <p></p>
+                <p>
+                  We introduce a practical, two-stage framework combining HetSGFormer for scalable static learning and Incremental Locally Linear Embedding (ILLE) for real-time, GPU-free updates, addressing scalability, data freshness, and cold-start challenges in billion-scale recommendation systems.
+                </p>
+              </td>
+            </tr>
 
-<tr>
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-        <a href="images/Todoevolve.png"><img src='images/Todoevolve.png' width="100%"></a>
-    </div>
-  </td>
-  <td style="padding: 20px; width:75%; vertical-align:middle">
-    <a class="a1" href="https://arxiv.org/abs/2602.07839">
-      <span class="papertitle">TodoEvolve: Learning to Architect Agent Planning Systems</span>
-    </a>
-    <br>
-    <strong>Jiaxi Liu</strong> ,
-    <a class="a2">Yanzuo Jiang, Guibin Zhang(Project Lead), Zihan Zhang, Heng Chang, Zhenfei Yin, Qibing Ren, Junchi Yan</a>
-    <br>
-    Preprint
-    <br>
-    <a href="https://arxiv.org/abs/2602.07839">PDF</a> | <a href="https://github.com/EcthelionLiu/TodoEvolve">Code</a>
-    <p></p>
-    <p>
-      We propose TodoEvolve, a meta-planning paradigm that autonomously synthesizes and dynamically revises task-specific LLM agent planning architectures via Impedance-Guided Preference Optimization (IGPO), consistently outperforming carefully engineered static planning frameworks.
-    </p>
-  </td>
-</tr>
-
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                    <a href="images/Todoevolve.png"><img src='images/Todoevolve.png' width="100%"></a>
+                </div>
+              </td>
+              <td style="padding: 20px; width:75%; vertical-align:middle">
+                <a class="a1" href="https://arxiv.org/abs/2602.07839">
+                  <span class="papertitle">TodoEvolve: Learning to Architect Agent Planning Systems</span>
+                </a>
+                <br>
+                <strong>Jiaxi Liu*</strong> ,
+                <a class="a2">Yanzuo Jiang*, Guibin Zhang*, Zihan Zhang, Heng Chang, Zhenfei Yin, Qibing Ren, Junchi Yan</a>
+                <br>
+                Preprint
+                <br>
+                <a href="https://arxiv.org/abs/2602.07839">PDF</a> | <a href="https://github.com/EcthelionLiu/TodoEvolve">Code</a>
+                <p></p>
+                <p>
+                  We propose TodoEvolve, a meta-planning paradigm that autonomously synthesizes and dynamically revises task-specific LLM agent planning architectures via Impedance-Guided Preference Optimization (IGPO), consistently outperforming carefully engineered static planning frameworks.
+                </p>
+              </td>
+            </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding-left:20px; padding-top:20px; width:100%;vertical-align:middle">
-              <h2>Selected Awards</h2>
-            </td>
-          </tr>
+              <td style="padding-left:20px; padding-top:20px; width:100%;vertical-align:middle">
+                <h2 id="awards">Honors and Awards</h2>
+              </td>
+            </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      
             <tr>
-  <td style="padding-left:30px;width:100%;vertical-align:middle">
-    <ul>
-      <li><strong>2025:</strong> Outstanding Graduate, Nanjing University</li>
-      <li><strong>2025:</strong> Academic Research Scholarship, School of Artificial Intelligence, Nanjing University</li>
-      <li><strong>2024:</strong> Top Outstanding Student Award, Nanjing University (<strong>Top 35 University-wide</strong>)</li>
-      <li><strong>2024:</strong> Zheng Gang Scholarship for Overseas Exchange, Nanjing University</li>
-      <li><strong>2023:</strong> Huawei Scholarship</li>
-      <li><strong>2023:</strong> Outstanding Volunteer, Nanjing University</li>
-      <li><strong>2022:</strong> Outstanding Individual in Social Practice, Jiangsu Province</li>
-    </ul>
-  </td>
-</tr>
+              <td style="padding-left:30px;width:100%;vertical-align:middle">
+                <ul>
+                  <li><strong>2025:</strong> Outstanding Graduate, Nanjing University</li>
+                  <li><strong>2025:</strong> Academic Research Scholarship, School of Artificial Intelligence, Nanjing University</li>
+                  <li><strong>2024:</strong> Top Outstanding Student Award, Nanjing University (<strong>Top 35 University-wide</strong>)</li>
+                  <li><strong>2024:</strong> Zheng Gang Scholarship for Overseas Exchange, Nanjing University</li>
+                  <li><strong>2023:</strong> Huawei Scholarship</li>
+                  <li><strong>2023:</strong> Outstanding Volunteer, Nanjing University</li>
+                  <li><strong>2022:</strong> Outstanding Individual in Social Practice, Jiangsu Province</li>
+                </ul>
+              </td>
+            </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;padding-top: 30px; margin-right: auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding-left:20px; padding-top:20px; width:100%;vertical-align:middle">
-              <h2>Misc</h2>
-            </td>
-          </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
-    
-<tr>
-  <td style="padding-left:30px;width:100%;vertical-align:middle">
-    <ul>
-      <li>
-        <p><strong>Travel:</strong> I love exploring new places and capturing the beauty of the world. So far, I have visited over 50 cities across China and explored more than 10 countries and regions overseas. 🌍✈️📸</p>
-      </li>
-      <li>
-        <p><strong>Fantasy Literature:</strong> I am deeply fascinated by imaginative world-building and epic narratives, with a particular love for <em>The Lord of the Rings</em> and <em>A Song of Ice and Fire</em> series. 🐉📚✨</p>
-      </li>
-      <li>
-        <p><strong>Sports:</strong> I enjoy playing football to stay active after a long day of research. I am also a fan of FC Bayern Munich! ⚽🏃‍♂️🏟️</p>
-      </li>
-      <li>
-        <p><strong>Musical Theater:</strong> I am a huge fan of live performances. My absolute favorites are <em>Hamilton</em> and <em>Les Misérables</em>, and I have had the unforgettable experience of watching <em>Hamilton</em> live twice at the Richard Rodgers Theatre in New York. 🎭🎶✨</p>
-      </li>
-    </ul>
-  </td>
-</tr>
-      
-                </tbody></table>
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                  <tr>
-                    <td style="padding:0px">
-                      <br>
-                      <p style="text-align:center;font-size:small;">
-                        The source code is stolen from <a href="https://jonbarron.info/">Jon Barron</a>. Thanks for his sharing! 🙏🏻
-                      </p>
-                    </td>
-                  </tr>
-                </tbody></table>
+              <td style="padding-left:20px; padding-top:20px; width:100%;vertical-align:middle">
+                <h2 id="education">Education</h2>
               </td>
             </tr>
-          </table>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding-left:30px;width:100%;vertical-align:middle">
+                <ul>
+                  <li>
+                    <p><strong>2025.09 - Present:</strong> Master's student in the Department of Computer Science, <strong>Shanghai Jiao Tong University</strong>.</p>
+                  </li>
+                  <li>
+                    <p><strong>2021.09 - 2025.06:</strong> Undergraduate in the School of Artificial Intelligence, <strong>Nanjing University</strong>.</p>
+                  </li>
+                  <li>
+                    <p><strong>2018.09 - 2021.06:</strong> <strong>Guangzhou No.2 High School</strong>, Guangdong.</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;padding-top: 30px; margin-right: auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding-left:20px; padding-top:20px; width:100%;vertical-align:middle">
+                <h2 id="misc">Miscellaneous</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding-left:30px;width:100%;vertical-align:middle">
+                <ul>
+                  <li>
+                    <p><strong>Travel:</strong> I love exploring new places and capturing the beauty of the world. So far, I have visited over 50 cities across China and explored more than 10 countries and regions overseas. 🌍✈️📸</p>
+                  </li>
+                  <li>
+                    <p><strong>Fantasy Literature:</strong> I am deeply fascinated by imaginative world-building and epic narratives, with a particular love for <em>The Lord of the Rings</em> and <em>A Song of Ice and Fire</em> series. 🐉📚✨</p>
+                  </li>
+                  <li>
+                    <p><strong>Sports:</strong> I enjoy playing football to stay active after a long day of research. I am also a fan of FC Bayern Munich! ⚽🏃‍♂️🏟️</p>
+                  </li>
+                  <li>
+                    <p><strong>Musical Theater:</strong> I am a huge fan of live performances. My absolute favorites are <em>Hamilton</em> and <em>Les Misérables</em>, and I have had the unforgettable experience of watching <em>Hamilton</em> live twice at the Richard Rodgers Theatre in New York. 🎭🎶✨</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  The source code is stolen from <a href="https://jonbarron.info/">Jon Barron</a>. Thanks for his sharing! 🙏🏻
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
         </td>
       </tr>
     </table>
   </body>
 </html>
-

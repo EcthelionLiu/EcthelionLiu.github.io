@@ -34,6 +34,54 @@
       .navbar a:hover {
         color: #222;
       }
+
+      .venue-badge {
+        display: inline-block;
+        padding: 3px 9px;
+        margin: 4px 0 2px 0;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        line-height: 1.4;
+      }
+      .venue-icml-blue {
+        color: #174ea6;
+        background: #e8f0fe;
+        border: 1px solid #aecbfa;
+      }
+      .venue-icml-purple {
+        color: #6a1b9a;
+        background: #f3e8ff;
+        border: 1px solid #d9b8ff;
+      }
+      .venue-preprint {
+        color: #5f6368;
+        background: #f1f3f4;
+        border: 1px solid #dadce0;
+      }
+      .paper-card {
+        width: 100%;
+        min-height: 105px;
+        border-radius: 12px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 700;
+        line-height: 1.25;
+        padding: 12px;
+        border: 1px solid #e5e7eb;
+      }
+      .design-linear-card {
+        color: #5f1a7a;
+        background: linear-gradient(135deg, #fbf5ff 0%, #eef6ff 100%);
+      }
+      .paper-meta {
+        color: #555;
+      }
     </style>
   </head>
 
@@ -97,6 +145,53 @@
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
+                    <a href="images/Todoevolve.png"><img src='images/Todoevolve.png' width="100%"></a>
+                </div>
+              </td>
+              <td style="padding: 20px; width:75%; vertical-align:middle">
+                <a class="a1" href="https://arxiv.org/abs/2602.07839">
+                  <span class="papertitle">TodoEvolve: Learning to Architect Agent Planning Systems</span>
+                </a>
+                <br>
+                <strong>Jiaxi Liu*</strong>,
+                <a class="a2">Guibin Zhang*, Yanzuo Jiang, Zihan Zhang, Heng Chang, Zhenfei Yin, Qibing Ren, Junchi Yan</a>
+                <br>
+                <span class="venue-badge venue-icml-purple">ICML 2026</span>
+                <br>
+                <a href="https://arxiv.org/abs/2602.07839">PDF</a> | <a href="https://github.com/EcthelionLiu/TodoEvolve">Code</a>
+                <p></p>
+                <p>
+                  We propose TodoEvolve, a meta-planning paradigm that autonomously synthesizes and dynamically revises task-specific LLM agent planning architectures via Impedance-Guided Preference Optimization (IGPO), consistently outperforming carefully engineered static planning frameworks.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                    <a href="images/Linear_Constrained.png"><img src='images/Linear_Constrained.png' width="100%"></a>
+                </div>
+              </td>
+              <td style="padding: 20px; width:75%; vertical-align:middle">
+                <span class="papertitle">Design Linear Constrained Neural Layers with Implicit Convex Optimization</span>
+                <br>
+                <a class="a2">Junchi Yan</a>,
+                <strong>Jiaxi Liu</strong>,
+                <a class="a2">Liangliang Shi, Fangyuan Zhou, Wenzheng Pan, Zhongteng Gui, Yihui Tu</a>
+                <br>
+                <span class="venue-badge venue-icml-purple">ICML 2026</span>
+                <br>
+                <span class="paper-meta">PDF coming soon</span>
+                <p></p>
+                <p>
+                  We introduce LinConLayer, a plug-in differentiable layer for enforcing linear constraints in neural networks through implicit convex optimization. The framework unifies classic constraint layers from an optimization perspective and instantiates two efficient variants, BLCLayer and GLCLayer, enabling stable, hard-constrained prediction for linear programming, partial graph matching, and portfolio allocation.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
                     <a href="images/HetSGFormer.png"><img src='images/HetSGFormer.png' width="100%"></a>
                 </div>
               </td>
@@ -109,36 +204,12 @@
                 <strong>Jiaxi Liu*</strong>,
                 <a class="a2">Yufeng Li, Hao Xiong, Junchi Yan, Kefan Wang, Yi Cao, Jiandong Ding</a> 
                 <br>
-                Preprint
+                <span class="venue-badge venue-preprint">Preprint</span>
                 <br>
                 <a href="https://arxiv.org/abs/2512.13120">PDF</a>
                 <p></p>
                 <p>
                   We introduce a practical, two-stage framework combining HetSGFormer for scalable static learning and Incremental Locally Linear Embedding (ILLE) for real-time, GPU-free updates, addressing scalability, data freshness, and cold-start challenges in billion-scale recommendation systems.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                    <a href="images/Todoevolve.png"><img src='images/Todoevolve.png' width="100%"></a>
-                </div>
-              </td>
-              <td style="padding: 20px; width:75%; vertical-align:middle">
-                <a class="a1" href="https://arxiv.org/abs/2602.07839">
-                  <span class="papertitle">TodoEvolve: Learning to Architect Agent Planning Systems</span>
-                </a>
-                <br>
-                <strong>Jiaxi Liu*</strong> ,
-                <a class="a2">Guibin Zhang*, Yanzuo Jiang, Zihan Zhang, Heng Chang, Zhenfei Yin, Qibing Ren, Junchi Yan</a>
-                <br>
-                Preprint
-                <br>
-                <a href="https://arxiv.org/abs/2602.07839">PDF</a> | <a href="https://github.com/EcthelionLiu/TodoEvolve">Code</a>
-                <p></p>
-                <p>
-                  We propose TodoEvolve, a meta-planning paradigm that autonomously synthesizes and dynamically revises task-specific LLM agent planning architectures via Impedance-Guided Preference Optimization (IGPO), consistently outperforming carefully engineered static planning frameworks.
                 </p>
               </td>
             </tr>

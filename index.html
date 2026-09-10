@@ -89,12 +89,52 @@
       .paper-meta {
         color: #555;
       }
+
+
+      .internship-item {
+        margin: 0 0 22px 0;
+      }
+
+      .internship-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+      }
+
+      .internship-org {
+        font-size: 17px;
+        font-weight: 700;
+        color: #222;
+      }
+
+      .internship-date {
+        color: #666;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .internship-team {
+        color: #555;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .internship-desc {
+        margin: 6px 0 0 0;
+        line-height: 1.6;
+        color: #333;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="navbar">
       <a href="#about">About Me</a>
+      <a href="#internship">Internship Experience</a>
       <a href="#publications">Publications</a>
       <a href="#awards">Honors and Awards</a>
       <a href="#education">Education</a>
@@ -136,6 +176,42 @@
                     别辜负眼前季节！
                   </div>
                 </div>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="internship">Internship Experience</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0 30px 10px 30px;width:100%;vertical-align:middle">
+
+                <div class="internship-item">
+                  <div class="internship-header">
+                    <span class="internship-org">StepFun </span>
+                    <span class="internship-date">2026.10 - Ongoing</span>
+                  </div>
+                  <div class="internship-team">Foundation Model Team</div>
+                </div>
+
+                <div class="internship-item">
+                  <div class="internship-header">
+                    <span class="internship-org">Tencent · WeChat E-commerce Product</span>
+                    <span class="internship-date">2025.06 - 2025.09</span>
+                  </div>
+                  <div class="internship-team">Algorithm Engineering Intern</div>
+
+                  <p class="internship-desc">
+                    <strong>Project:</strong> Developed LLM-enhanced e-commerce retrieval models for WeChat and built an agentic retrieval-and-recommendation pipeline for the WeChat Gift AI Assistant, integrating semantic retrieval, LLM-based ranking, multi-turn intent understanding, and tool-oriented planning for interactive product recommendation.
+                  </p>
+                </div>
+
               </td>
             </tr>
           </tbody></table>

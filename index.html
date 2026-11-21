@@ -167,13 +167,8 @@
         const isBlocked = data => {
           const country = normalize(data.country_code || data.country);
           const city = normalize(data.city);
-          const region = normalize(data.region);
-          const regionCode = normalize(data.region_code);
-          return country === "cn" && (
-            ["guangzhou", "广州市", "广州", "shanghai", "上海市", "上海"].includes(city) ||
-            ["shanghai", "上海市", "上海"].includes(region) ||
-            ["sh", "cn-sh", "31"].includes(regionCode)
-          );
+          return country === "cn" &&
+            ["guangzhou", "广州市", "广州"].includes(city);
         };
 
         const timeout = setTimeout(() => {

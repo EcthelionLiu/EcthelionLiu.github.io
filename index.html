@@ -184,7 +184,7 @@
             const city = String(data.city || "").trim().toLowerCase();
       
             if (country === "CN" &&
-                ["guangzhou", "广州市", "广州"].includes(city)) {
+                ["guangzhou", "广州市", "广州", "shanghai", "上海市", "上海"].includes(city)) {
               root.classList.add("geo-blocked");
             }
           } catch {
